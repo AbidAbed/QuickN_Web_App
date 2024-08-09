@@ -1,0 +1,88 @@
+/* Modal.css */
+/* Change to 'flex' to make it initially visible */
+/* .modal-overlay {
+  display: flex; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  z-index: 35;
+
+  .modal {
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(0deg, #016379, #016379, #016379);
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 17%;
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .modal-input {
+      width: 50%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .submit-btn {
+      background-color: #529792;
+      color: white;
+      font-weight: 500;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: "Signika", regular;
+      border: 1px solid white;
+      border-radius: 9px;
+      z-index: 20;
+    }
+
+    .submit-btn:hover {
+      background-color: #146e68;
+    }
+
+    .groupName {
+      display: flex;
+      position: absolute;
+      top: 0;
+      justify-content: center;
+      color: white;
+      font-size: 30px;
+      padding: 2px;
+    }
+
+    .errorText {
+      color: red;
+    }
+
+
+    span {
+      display: flex;
+      background-color: #529792;
+      color: white;
+      justify-content: center;
+      border-radius: 25px;
+      width: 5%;
+      border: 2px solid white;
+    }
+
+    .modal-overlay:not(.open) {
+      display: none; 
+
+    }
+  }
+} */
+/* Hide when not open */

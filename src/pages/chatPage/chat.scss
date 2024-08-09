@@ -1,0 +1,344 @@
+.chat {
+  .selectedCon {
+    background-color: #529792;
+    color: white;
+    border: 2px solid #f3f3f3;
+  }
+
+  .searchButton {
+    border-radius: 5px;
+    width: 30%;
+    height: 20%;
+    padding: 2%;
+    background-color: #045263;
+    border: none;
+    color: #fff;
+    border: #6b6a6a;
+  }
+
+  .sendButton {
+    border-radius: 5px;
+    width: 10%;
+    height: 35%;
+    padding: 2%;
+    background-color: #016379;
+    border: none;
+    color: #fff;
+    border: #6b6a6a;
+  }
+
+  .searchButton:hover {
+    background-color: #063743;
+  }
+
+  .nonSelectedCon {
+    background-color: white;
+    color: #016379;
+    z-index: 10;
+  }
+
+  .searchInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .searchIcon {
+      position: absolute;
+      right: 10px;
+      font-size: 30px;
+      color: #016379;
+      cursor: pointer;
+    }
+    .chatMenuInput {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+    }
+  }
+
+  // height: calc(100vh - 90px);
+  display: flex;
+  padding: 10px;
+
+  .groupMenueParent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 500px;
+  }
+  .groupMenue {
+    margin-left: 2%;
+    cursor: pointer;
+    width: 1%;
+  }
+  .chatMenu {
+    flex: 3;
+    background: linear-gradient(0deg, #001f47, #058baa, #13a09c);
+  }
+
+  .chatBox {
+    flex: 5.5;
+    background-color: #f2f4f4;
+    position: relative;
+    z-index: 34;
+
+    .watermark {
+      display: none;
+      // position: absolute;
+      bottom: 60%;
+      width: 100%;
+      z-index: -3;
+      justify-content: center;
+      transform: rotate(45deg);
+      font-size: 40px;
+      padding: 10px;
+      text-transform: capitalize;
+      color: rgb(196, 171, 171);
+      opacity: 0.45;
+    }
+
+    .chatBoxWrapper {
+      display: flex;
+      flex-direction: column;
+      z-index: 11;
+
+      .audioRecorderParent {
+        border-radius: 20px;
+        max-width: fit-content;
+        width: 30vw !important;
+
+      }
+      .audioRecorder {
+        width: 30vw !important;
+      }
+
+
+
+      .chatMsgHeader {
+        background: #08b3ad;
+        color: #fff;
+        padding: 6px;
+        position: absolute;
+        width: 92%;
+        z-index: 1;
+        opacity: 70%;
+        top: 0;
+        /* border-radius: 13px; */
+      }
+
+      .chatBoxTop {
+        height: 15%;
+        overflow-y: scroll;
+        padding: 10px;
+        border-bottom: 3px solid #396177;
+
+        .chatBoxPersonName {
+          margin-bottom: 20px;
+          background-color: blue;
+          max-width: 250px;
+          text-align: center;
+          color: white;
+          padding: 10px;
+        }
+      }
+
+      .chatBoxBottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        @keyframes fade {
+          0%,
+          100% {
+            scale: 75%;
+          }
+          50% {
+            scale: 150%;
+          }
+        }
+
+        .voiceIcon {
+          cursor: pointer;
+          font-size: 24px;
+          color: #016379;
+        }
+
+        .voiceStartIcon {
+          cursor: pointer;
+          font-size: 24px;
+          color: #016379;
+        }
+
+        .voiceStoptIcon {
+          cursor: pointer;
+          font-size: 24px;
+          color: rgb(105, 5, 5);
+          animation: fade 1s linear infinite;
+        }
+
+        .sendVoiceIcon {
+          cursor: pointer;
+          font-size: 24px;
+          color: #016379;
+        }
+      }
+    }
+
+    .message__header {
+      font-size: 35px;
+      margin-bottom: 25px;
+      background-color: rgb(123, 148, 175);
+      width: max-content;
+      padding: 10px;
+      border-radius: 20px;
+    }
+  }
+
+  .chatAnnouncement {
+    flex: 3.5;
+    background-color: #f2f4f4;
+
+    .chatAnnouncementWrapper {
+      overflow-y: scroll;
+      width: 100%;
+      .addAnnouncementBtn {
+        padding: 10px 15px;
+        font-size: 16px;
+        text-transform: capitalize;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+        background: linear-gradient(345deg, #001f47, #058baa, #13a09c);
+        box-shadow: 2px 6px 16px 2px rgba(0, 0, 0, 0.44);
+        -webkit-box-shadow: 2px 6px 16px 2px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: 2px 6px 16px 2px rgba(0, 0, 0, 0.44);
+        transition: 0.4s all ease;
+
+        &:hover {
+          background-color: #13a09c;
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+
+  .chatMenuWrapper,
+  .chatBoxWrapper,
+  .chatAnnouncementWrapper {
+    padding: 15px;
+    height: 100%;
+  }
+
+  .chatMenuWrapper {
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #086f86;
+    position: relative;
+    z-index: 10;
+
+    .artImg {
+      z-index: -15;
+      position: sticky;
+      right: 0;
+      bottom: 0;
+    }
+
+    .mainButtons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .creatGroupBtn {
+        color: white;
+        background-color: #08b3ad;
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: 16px;
+        text-transform: capitalize;
+        outline: none;
+        border: none;
+        margin-top: 10px;
+        margin-left: 5px;
+        box-shadow: 9px 10px 16px -1px rgba(0, 99, 130, 0.75);
+        -webkit-box-shadow: 9px 10px 16px -1px rgba(0, 99, 130, 0.75);
+        -moz-box-shadow: 9px 10px 16px -1px rgba(0, 99, 130, 0.75);
+        transition: 0.5s all ease-in;
+
+        &:hover {
+          box-shadow: 6px 5px 12px -1px rgba(0, 99, 130, 0.75);
+          background-color: #008682;
+          transform: scale(0.95);
+          -webkit-box-shadow: 6px 8px 10px -1px rgba(0, 99, 130, 0.75);
+          -moz-box-shadow: 4px 5px 9px -1px rgba(0, 99, 130, 0.75);
+        }
+      }
+
+      .createNewChatBtn {
+        color: white;
+        background-color: #08b3ad;
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: 16px;
+        text-transform: capitalize;
+        outline: none;
+        border: none;
+        margin-top: 10px;
+        margin-left: 5px;
+        box-shadow: 9px 10px 16px -1px rgba(0, 99, 130, 0.75);
+        -webkit-box-shadow: 9px 10px 16px -1px rgba(0, 99, 130, 0.75);
+        -moz-box-shadow: 9px 10px 16px -1px rgba(0, 99, 130, 0.75);
+        transition: 0.5s all ease-in;
+      }
+    }
+  }
+}
+.creatGroupBtn {
+  color: white;
+  background-color: #08b3ad;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  margin-left: 5px;
+  box-shadow: 9px 10px 16px -1px rgba(0, 99, 130, 0.75);
+  -webkit-box-shadow: 9px 10px 16px -1px rgba(0, 99, 130, 0.75);
+  -moz-box-shadow: 9px 10px 16px -1px rgba(0, 99, 130, 0.75);
+  transition: 0.5s all ease-in;
+
+  &:hover {
+    box-shadow: 6px 5px 12px -1px rgba(0, 99, 130, 0.75);
+    background-color: #008682;
+    transform: scale(0.95);
+    -webkit-box-shadow: 6px 8px 10px -1px rgba(0, 99, 130, 0.75);
+    -moz-box-shadow: 4px 5px 9px -1px rgba(0, 99, 130, 0.75);
+  }
+}
+.upload-success {
+  color: green;
+  font-size: 20px;
+}
+.intro {
+  font-size: 2vw;
+  color: #045263;
+}
+.groupImgTopBar{
+  width: 35px !important;
+  height: auto !important;
+  border-radius: 50% !important;
+}
+
+.announcementsActionBtns{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 2%;
+}

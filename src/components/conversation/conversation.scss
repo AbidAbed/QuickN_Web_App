@@ -1,0 +1,42 @@
+.conversation {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.6s all ease;
+  background-color: #f2f4f4;
+  border-radius: 10px;
+  width: 100%;
+
+  .conversationImg {
+    height: auto;
+    width: 28px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #529792;
+  }
+
+  .isUnread {
+    background-color: red;
+  }
+  
+  .conversationName {
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.8s all ease;
+    font-family: "Signika", regular;
+    color: #13a09c;
+    text-transform: capitalize;
+  }
+}
+
+.conversation:hover {
+  background-color: #129894;
+  box-shadow: 1px 2px 5px 6px #13a09c;
+  transform: scale(0.97);
+  .conversationName {
+    color: white;
+  }
+}

@@ -1,0 +1,53 @@
+.approveModal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background-color: rgba(59, 59, 59, 0.725);
+    filter: grayscale(50%);
+    box-shadow: 5px 10px 6px 7px rgba(97, 97, 97, 0.639);
+}
+
+.approveModalContainer{
+    padding: 25px 30px;
+    width: 550px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.approveModalActionsContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.approveModalContainerContentHeader{
+    font-size: 25px;
+}
+
+.approveModalActionsContainerDeleteBtn{
+    background-color: #427884;
+    border: none;
+    padding: 5px 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.approveModalActionsContainerCancelBtn{
+    background-color: rgb(231, 55, 55);
+    border: none;
+    padding: 5px 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}

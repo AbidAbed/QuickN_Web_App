@@ -1,0 +1,71 @@
+.signup {
+  margin: auto;
+  max-width: 512px;
+
+  .signupHeader {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    font-family: "Signika", regular;
+    .signupInputField {
+      border: 1px solid black;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .signup-user-svg-logo-container{
+      position: absolute;
+      top: 0px;
+      left: 20px;
+      width: 280px;
+  }
+
+ 
+
+    .signupInputField::placeholder {
+      font-size: 16px;
+    }
+
+    .signupBtn {
+      background-color: rgb(51 65 85);
+      color: white;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .signupBtn:hover {
+      opacity: 0.9;
+    }
+
+    .signupBtn:disabled {
+      opacity: 0.8;
+      cursor: default;
+    }
+  }
+}
+.signup-user-svg-container{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 100%;
+  color: rgb(140, 187, 171);
+  z-index: -9999;
+  
+  .user-signup-svg{
+      width: 60%;
+      float: right;
+  }
+}

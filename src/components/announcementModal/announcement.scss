@@ -1,0 +1,195 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba(132, 132, 132, 0.639);
+
+  .modalContiner {
+    position: relative;
+    background: linear-gradient(0deg, #016379, #016379, #016379);
+    padding: 30px 20px;
+    border-radius: 2%;
+
+    .artImg {
+        z-index: 10;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 20%;
+    }
+
+  }
+
+  .modalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+
+    h3 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #f2f4f4;
+    }
+
+    .Modalbtn {
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 4%;
+      background-color: inherit;
+      .icon {
+        font-size: 30px;
+        color: #058baa;
+        background-color: #f2f4f4;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .inputsForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .form {
+      margin: 20px;
+    }
+
+    .formItem {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 25px;
+
+      .label {
+        align-self: flex-start;
+        margin-bottom: 5px;
+        color: #f2f4f4;
+        font-weight: bold;
+      }
+
+      .input {
+        padding: 0px 10px;
+        width: 350px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        font-family: "Signika", regular;
+        border: 2px solid #13a09c;
+
+        &:focus {
+          border: 2px solid #13a09c;
+          outline: 2px solid #13a09c;
+        }
+      }
+
+      .input-textarea {
+        padding: 5px 10px;
+        width: 350px;
+        height: 100px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        resize: none;
+        font-family: "Signika", regular;
+      }
+
+      .priority {
+        width: 100%;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+    .formButtons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+
+      
+      button {
+        border: none;
+        font-size: 16px;
+        padding: 5px 10px;
+        font-family: "Signika", regular;
+        cursor: pointer;
+        font-weight: 500;
+      }
+
+      .submitBtn {
+        background-color: #529792;
+        color: white;
+        font-weight: 500;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "Signika", regular;
+        border: 1px solid white;
+        border-radius: 9px;
+        z-index: 20;
+      }
+    }
+  }
+}
+/* Apply styles to the modal container */
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1500;
+  max-height: 80vh; /* Set maximum height for scrollability */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds container height */
+}
+
+/* Optionally add an overlay to dim the background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+/* Apply styles to the buttons (adjust as needed) */
+.modal-container button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.modal-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Apply styles to the canvas */
+.modal-container canvas {
+  width: 100%; /* Ensure the canvas takes full width */
+  max-height: 60vh; /* Set maximum height for the canvas */
+}
+
+/* Hide the scrollbar for the canvas (optional) */
+.modal-container canvas::-webkit-scrollbar {
+  display: none;
+}

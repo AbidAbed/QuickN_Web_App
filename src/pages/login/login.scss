@@ -1,0 +1,79 @@
+.login{
+    margin: auto;
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+    overflow-y: hidden;
+
+    .login-user-svg-logo-container{
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        width: 280px;
+    }
+
+    .login-user-svg-container{
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: 1700px;
+        color: rgb(140, 187, 171);
+        z-index: -9999;
+        
+        .user-login-svg{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    .loginHeader{
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .loginForm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%;
+
+        .loginInputField{
+            border : 1px solid black;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 16px;
+            width: 500px;
+        }
+
+        .loginInputField::placeholder{
+            font-size: 16px;
+        }
+
+        .loginBtn{
+            background-color: rgb(51 65 85);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;   
+            cursor: pointer; 
+            font-size: 18px;
+            text-transform: uppercase;
+            width: 500px;   
+        }
+
+        .loginBtn:hover{
+            opacity: 0.90;
+        }
+
+        .loginBtn:disabled{
+            opacity: 0.80;
+            cursor:default;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+/* .GroupInfoModal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background-color: rgba(132, 132, 132, 0.639);  
+  }
+  
+  .overlay-modal {
+    position: absolute;
+    background: linear-gradient(0deg, #016379, #016379, #016379);
+    padding: 25px 30px;
+    border-radius: 2%;
+    width: 30%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+   ;
+  }
+  
+  .overlay-modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .overlay-modal-header-title{
+    color: white;
+  }
+
+  .close-button{
+    border: none;
+    background-color: #5fa2b1;
+    color: white;
+    padding: 4px 5px;
+    font-size: 16px;
+    border-radius: 50%;
+  }
+
+  .overlay-modal-info{
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .overlay-modal-info-header{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+
+  .overlay-modal-info-groupMembers{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+
+  .overlay-modal-info-groupMembers-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #5fa2b1;
+    width: 80%;
+    padding: 5px 15px  ;
+    z-index: 1;
+  }
+
+  .overlay-modal-info-groupMembers-item-memberName{
+    font-size: 20px;
+  }
+
+  .removeGroupMemberIcon{
+    font-size: 20px;
+    cursor: pointer !important;
+  }
+
+  .svgMesh{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    max-width: 350px;
+    height: auto;
+  } */

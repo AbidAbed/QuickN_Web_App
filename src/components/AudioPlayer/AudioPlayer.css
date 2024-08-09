@@ -1,0 +1,6 @@
+.audioMsg {
+    margin-top: 5px;
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 250px;
+    height: 50px;
+  }

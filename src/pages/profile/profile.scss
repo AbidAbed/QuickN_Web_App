@@ -1,0 +1,100 @@
+// .profile{
+//     padding: 12px;
+//     max-width: 600px;
+//     margin: 0 auto;
+
+//     h1{
+
+//         text-align: center;
+//         align-items: center;
+//         font-size: 40px;
+//         color: #13A09C;
+//         line-height: 36px;
+//         margin: 32px 0px;
+//         font-weight: bold;
+//     }
+
+//     .form{
+        
+//         display: flex;
+//         flex-direction: column;
+//         margin-top: 20px;
+//         gap: 20px;
+
+//         .profile-img{
+//             border-radius: 8px;
+//             height: auto;
+//             width: 170px;
+//             object-fit: cover;
+//             cursor: pointer;
+//             align-self: center;
+//             margin-bottom: 10px;
+//         }
+
+//         .form-input{
+//             border-radius: 8px;
+//             border: 1px solid;
+//             padding: 12px;
+
+//             &:focus{
+//                 outline: 1px solid #13A09C;
+//             }
+//         }
+
+//         .cancle-update-profile-btn{
+//             background-color: rgb(151, 7, 7);
+//             border-radius: 20px;
+//             padding: 12px;
+//             color: white;
+//             cursor: pointer;
+//             outline: none;
+//             border: none;
+//             text-transform: capitalize;
+
+//             &:hover{
+//                 opacity: 0.90;
+//             }
+//             &:disabled{
+//                 opacity: 0.75;
+//             }
+//         }
+//         .update-profile-btn{
+//             background-color: rgb(51 65 85);
+//             border-radius: 20px;
+//             padding: 12px;
+//             color: white;
+//             cursor: pointer;
+//             outline: none;
+//             border: none;
+//             text-transform: capitalize;
+
+//             &:hover{
+//                 opacity: 0.90;
+//             }
+//             &:disabled{
+//                 opacity: 0.75;
+//             }
+//         }
+
+//         .upload-text{
+//             font-size: 15px;
+//             line-height: 20px;
+//             align-self: center;
+
+//             .upload-error{
+//                 font-size: 20px;    
+//                 color: red
+//             }
+
+//             .upload-perc{
+//                 font-size: 20px;
+//                 color: rgb(51 65 85);
+//             }
+
+//             .upload-success{
+//                 color: green;
+//                 font-size: 20px;
+//             }
+//         }
+//     }
+// }

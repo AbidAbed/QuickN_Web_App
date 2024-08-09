@@ -1,0 +1,267 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  word-break: break-all;
+  width: 50%;
+  /* position: relative; */
+}
+
+.deleteMessageIcon {
+  cursor: pointer;
+}
+
+editMessageIcon{
+    cursor: pointer;
+}
+.singleChat {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.message.own {
+  align-items: flex-end;
+  background-color: #d8d8d8; /* Light gray for "Me" messages */
+}
+
+.message.isOwnHidden{
+  align-items: flex-end;
+  background-color: purple !important;
+}
+
+.isHiddenOthers{
+  background-color: orange;
+}
+
+.messageImgParent {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2%;
+  gap: 2%;
+  width: 100%;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+.messageTop {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.avatar-container {
+  margin-right: 10px;
+}
+
+.messageImg {
+  width: 30px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  margin: 5%;
+}
+
+.messageInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%; /* Adjust as needed */
+}
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.senderName {
+  margin: 0;
+  font-weight: bold;
+}
+
+.adminActions {
+  display: flex;
+  gap: 5px;
+}
+
+.fileContent {
+  margin-top: 10px;
+}
+
+
+
+.fileText,
+.messageText {
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: black;
+  max-width: 300px;
+}
+
+.fileIcon {
+  margin-right: 5px;
+}
+
+.audioMsg {
+  margin-top: 5px;
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  width: 250px;
+  height: 50px;
+}
+
+.messageText p {
+  margin: 0;
+}
+
+.messageBottom {
+  font-size: 12px;
+  font-weight: 500;
+  color: #13a09c;
+  margin: 5%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.downloadFileButton {
+  color: white;
+  background-color: #08b3ad;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.messageTime {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.cancel-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000; /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-prev-button {
+  background-color: #2908cd; /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatBoxBottom {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 10px;
+}
+
+.chatMessageInput {
+  width: 85%;
+  height: 90px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+  border: none;
+  color: #13a09c;
+  background-color: transparent;
+  width: 600px; /* Set your desired width */
+  height: 150px; /* Set your desired height */
+  resize: none; /* Disable resizing */
+
+  &::placeholder {
+    color: #396177;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+
+  &:focus {
+    outline: 2px solid #396177;
+  }
+}
+
+.chatMessageInput::placeholder {
+  font-size: 18px;
+}
+
+.chatMessageInput:focus {
+  border: none;
+}
+
+.chatSubmitBtn {
+  width: 80px;
+  height: 45px;
+  border: none;
+  padding: 10px 15px;
+  background-color: #13a09c;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.5s all ease;
+}
+.checkIcon.show {
+  position: absolute;
+  bottom: -100%;
+  right: 5%;
+  font-size: 10px;
+  margin-top: 3px;
+  color: #13a09c;
+  display: block;
+}
+
+.checkIconDouble.show {
+  position: absolute;
+  bottom: -95%;
+  right: 5%;
+  font-size: 10px;
+  color: #13a09c;
+  display: block;
+}
+
+.chatSubmitBtn:hover {
+  opacity: 0.9;
+}

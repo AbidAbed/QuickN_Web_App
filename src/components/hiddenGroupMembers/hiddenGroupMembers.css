@@ -1,0 +1,125 @@
+/* hiddenGroupMembers.css */
+
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 33, 33, 0.633); /* Semi-transparent gray overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+
+  }
+  
+  .custom-modal-content {
+    background-color: #016379; /* White background for modal content */
+  ; /* Increased padding for more spacing */
+    border-radius: 12px; /* Larger border radius for a softer look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Increased shadow effect */
+    max-width: 800px; /* Limit maximum width of modal */
+  }
+  
+  .custom-members-list {
+  /* Increased margin-top for more spacing */
+    max-height: 240px;
+    overflow-y: scroll;
+    padding: 20px;
+    margin: 0;
+    border-top: 0.2px solid #016379;
+    border-bottom: 0.2px solid #004554;
+    background-color: white;
+  }
+  
+  .hiddenModeTitle{
+    font-size:1.5vw;
+    text-align: center;
+    color: #016379;
+    font-weight: 400;
+    color: white;
+    background-color: #105b6f;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+
+.custom-member-item {
+    margin-bottom: 15px; /* Increased margin-bottom for more spacing */
+    display: flex; /* Display items horizontally */
+    align-items: center; /* Center items vertically */
+    color: grey;
+    border-bottom: 1px solid rgb(152, 152, 152);
+    padding-bottom: 2%;
+  }
+  
+  .custom-checkbox {
+    margin-right: 20px; /* Increased margin-right for more spacing */
+    width: 20px; /* Increase checkbox size */
+    height: 20px; /* Increase checkbox size */
+  }
+  
+  .custom-label {
+    font-size: 18px; /* Increase font size for better readability */
+    margin-right: 20px; /* Adjust margin-right for spacing between label and checkbox */
+    flex-grow: 1; /* Allow label to grow and take up remaining space */
+  }
+  
+  .custom-members-list-container{
+    padding: 30px 45px;
+    background-color: #f2f2f2;
+  }
+
+  .hiddenMemberName{
+    margin-right: 20px;
+    font-size: 1.1vw;
+  }
+
+  .enterHiddenModeBtn{
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #005164 !important;
+    color: white;
+    font-size: 0.8vw;
+  }
+
+  .bg{
+    background-color: #76B55C !important;
+    color: white;
+  }
+
+  .cancel-Bg{
+    background-color: #007893 !important;
+    color: white;
+    font-size: 0.8vw;
+    padding: 10px 15px;
+  }
+
+  .hiddenModeBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 10px;
+    background-color: #f2f2f2;
+  }
+
+
+  @media (max-width : 1150px){
+    .hiddenModeTitle{
+      font-size: 1.9vw;
+    }
+
+    .hiddenMemberName{
+      font-size: 1.1vw;
+    }
+
+    .cancel-Bg{
+      font-size: 1vw;
+    }
+
+    .enterHiddenModeBtn{
+      font-size: 1vw;
+    }
+  }
